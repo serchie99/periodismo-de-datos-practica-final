@@ -63,53 +63,28 @@ Para consultar la variable de entorno `$PATH` tenemos que usar `echo $PATH`. La 
 
 ## Comandos utilizados
 
-- `pwd`: donde estoy 
-- `ls [ruta del directorio]`: ruta del directorio
-- `cd` = cambiar de directorio 
-- `mv  [origen] [destino]`: comando para mover archivos o para renombrar archivos o directorios. 
-- `cp [origen] [destino]`: para copiar un archivo o carpeta a otra
-- `man`: es el comando del manual de la terminal. `Q` para salir del manual.
-- `mkdir [nombre carpeta]`: comando con el que creamos una carpeta
-- `cat`: con este comando visualizamos un archivo desde la misma terminal. 
-- `echo` = la terminal con este comando nos lo devuelva un texto. Por ejemplo, si queremos saber cuál es nuestra variable de entorno home debemos poner `echo $HOME`. 
-- `env` = visualizamos con este comando todas las variables de entorno. Al ser tantas debemos escribir `env | less` para ver de manera más asequible este enorme listado. 
-- `nano` = se abre con el  programa de edición de texto nano que nos permite crear o editar los textos 
-*Comandos Git = aunque muchos se han explicado con anterioridad, en este punto detallamos algunos nuevos y recordamos el resto.* 
-- `git clone` = comando con el que clonamos un repositorio remoto en nuestro directorio local.
-- `git config` = con este comando definimos los valores de configuración de git.Como hemos visto anteriormente: `git config --global user.name`;  `git config --global user.email`;  `git config --global set-editor nano`.
-- `git status` = comando que nos muestra el estado del directorio de trabajo y del área de entorno. Nos permite ver los cambios que se han realizado, los que se han reparado o no, en los que Git no puede vincular etc. 
-- `git add “nombre-archivo”` o `git add .` = este comando nos permite añadir los cambios del directorio al entorno de ensayo, es decir con este comando le dices a Git las actualizaciones que quieres realizar. A través del argumento `.` añades todos los nuevos archivos, cambios etc. 
-- `git commit -m “lo que comiteamos” ` o `git commit .` = con este comando realizamos el commit es decir el cambio que hemos realizado se verá con esta acción en GitHub. A través del argumento `.` añades todos los nuevos archivos, cambios etc. 
-- `git push` =  se usa este comando para cargar el contenido del repositorio local al repositorio remoto de Github (en nuestro caso) . Este paso es el último que realizaremos para actualizar los cambios que veíamos en `Git Status`.
-- `git pull` =  permite actualizar los contenidos de los repositorios. 
-- `git remote -v`
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  - `ls`: para ver qué archivos y carpetas hay en la ruta en la que estamos
+  - `cd`: para acceder a un directorio en específico. 
+  - `pwd`: para que nos indique en qué ruta estamos actualmente.
+  - `mkdir`: para crear una carpeta nueva.
+  - `&&`: para ejecutar dos comandos en una misma línea o de una vez.
+  - `|`: para pasar de una salida a una entrada. 
+  - `man`: (es el de “manual”) sirve para que nos dice qué hace un comando y nos muestra todas las opciones posibles. 
+  - `cat`: para previsualizar un archivo en la terminal.
+  - `whoami`: para que la terminal me diga quien soy.
+  - `git clone`: para clonar.
+  - `mv`: para mover las carpetas o archivos de un lugar en específico y para renombrarlos.
+  - `cp`: para copiar y pegar carpetas o archivos.
+  - `nano`: para editor un texto.
+  - `echo`: para que la terminal nos devuelva un texto. Si queremos que nos diga cuál es nuestra casa, escribimos `echo $HOME`.
+  - `mnt`: para relacionar el programa con el equipo (en mi caso Windows).
+  - `env`: para visualizar las variables de entorno. Si utilizamos también `| less` nos ayudará a visualizar mejor los datos en el caso de que sean demasiadas variables.
+  - `touch`: para crear un archivo nuevo.
+  - `tree`: este comando nos muertra diferentes niveles: `tree -L 1` con esto le decimos cuántos niveles queremos ver. Y podemos añadir el número que queramos como `tree -L 2` o `tree -L 3`.
+  - `rm`: para eliminar de manera total archivos o directorios.
+  - `wget`: para descargarnos un archivo/contenido de una web.
+  - `curl`: también sirve para descargar achivos/contenidos de una web solo que aquí tienes más opciones.
+  - `git status`: para conocer los archivos que tengo en el ordenador.
+  - `git add .`: para añadir todos los datos nuevos al repositorio que quiera.
+  - `git push`: comando que he utilizado para subir los cambios realizados a Github.
